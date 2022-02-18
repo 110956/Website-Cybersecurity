@@ -89,6 +89,9 @@ li:hover .list{
   padding-left: 1vw;
 }
 
+img{
+  float: right;
+}
 
 .body{
   display: flex;
