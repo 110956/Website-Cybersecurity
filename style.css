@@ -100,29 +100,25 @@ li:hover .list{
   margin: 10vw;
 }
 /*tabel*/
-.divtabel{
+table{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 15px;
-}
-.divtabel table{
-  display: flex;
-  justify-content: center;
   padding-left: 2vw;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  margin-bottom: 3vw;
+  align-content: center;
+  flex-wrap: wrap;
+  border-collapse: collapse;
 }
-.divtabel th{
-  padding-right: 2vw;
+th{
+  font-weight: bold;
+}
+th, td{
+  border: 2px solid #000000;
+  padding: 8px;
 }
 
-@media (max-width: 650px) {
-  .divtabel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 /*video*/
 .vid{
   position: relative;
