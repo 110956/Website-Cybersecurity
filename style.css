@@ -89,20 +89,6 @@ li:hover .list{
   padding-left: 1vw;
 }
 
-img{
-  float: right;
-}
-
-.img1{
-  width: 30vw;
-  height: 15vw;
-}
-
-.img2{
-  width: 30vw;
-  height: 17vw;
-}
-
 .body{
   display: flex;
   flex-direction: column;
@@ -149,3 +135,37 @@ th, td{
   height: 100%;
 }
 
+/*form*/
+fieldset{
+  border: 0;
+}
+.msg{
+  height: 10vw;
+  width: 20vw;
+  font-family: arial;
+}
+
+/*afbeeldingen*/
+img{
+  float: right;
+}
+
+.img1{
+  width: 30vw;
+  height: 15vw;
+}
+
+.img2{
+  width: 30vw;
+  height: 17vw;
+}
+.img3{
+  width: 30vw;
+  height: 15vw;
+}
+
+.img4{
+  width: 30vw;
+  height: 17vw;
+  margin-right: 50px;
+}
