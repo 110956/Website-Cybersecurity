@@ -1,5 +1,5 @@
 html {
-    background: url(Images/Background.png) no-repeat center center fixed;
+    background: url(Images/Background.png) repeat center center fixed;
 }
 
 /*header*/
@@ -52,7 +52,7 @@ nav ul{
 .list{
   display: none;
   position: absolute;
-  top: 2.2vw;
+  top: calc(10px + 1.5vw);
   left: 8vw;
   background-color: rgb(189, 189, 189);
   border-bottom-left-radius: 1vw;
@@ -73,12 +73,17 @@ li:hover .list{
 .titel{
   display: flex;
   justify-content: center;
-  font-size: 3vw;
+  font-size:calc(12px + 1.5vw);
+  font-family: Arial;
+}
+
+.sub{
+  font-size:calc(10px + 1vw);
   font-family: Arial;
 }
 
 .tekst{
-  font-size: 16px;
+  font-size:calc(12px + .5vw);
   font-family: arial;
   padding-right: 1vw;
   padding-left: 1vw;
@@ -93,5 +98,45 @@ li:hover .list{
     border-width: 0.5vw;
     border-color: rgb(189, 189, 189);
   margin: 10vw;
+}
+/*tabel*/
+.divtabel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+.divtabel table{
+  display: flex;
+  justify-content: center;
+  padding-left: 2vw;
+  flex-direction: column-reverse;
+}
+.divtabel th{
+  padding-right: 2vw;
+}
+
+@media (max-width: 650px) {
+  .divtabel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*video*/
+.vid{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.vid iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
