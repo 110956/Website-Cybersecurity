@@ -32,32 +32,34 @@
   <div class="body">
 
     <h1 class="titel">Contactpagina</h1>
-    
-    <form class = "tekst" action="/action_page.php">
-      <fieldset>
-        <label for="vname">Voornaam:</label><br>
-        <input type="text" id="vname" name="vname" placeholder="Bill" required><br>
-        <label for="aname">Achternaam:</label><br><img class = "img4" src="Images/mail.png">
-        <input type="text" id="aname" name="aname" placeholder="Gates" required><br>
-        <label for="land">Land:</label><br>
-        <select name="land" id="land" required>
-          <option value="Overig">Overig</option>
-          <option value="België">België</option>
-          <option value="Duitsland">Duitsland</option>
-          <option value="Luxemburg">Luxemburg</option>
-          <option value="Nederland">Nederland</option>
-          <option value="Spanje">Spanje</option>
-          <option value="USA">USA</option>
-        </select><br>
-        <label for="mail">Mail adres:</label><br>
-        <input type="email" id="mail" name="mail" placeholder="billgates@gmail.com" required><br>
-        <label for="telefoon">Telefoonnummer:</label><br>
-        <input type="tel" id="telefoon" name="telefoon" pattern="^\d{10}$" placeholder="06-55523653" required><br>
-        <label for="msg">Bericht:</label><br>
-        <textarea class = "msg"type="text" id="msg" name="msg" placeholder="Wanneer Bill Gates het warm heeft zet hij de 'windows' open." required></textarea><br><br>
-        <input class="tekst" type="submit" value="Verzenden">
-      </fieldset>
-    </form>
+    <div class="divform">
+      <form class = "tekst" action="/action_page.php">
+        <fieldset>
+          <label for="vname">Voornaam:</label><br>
+          <input type="text" id="vname" name="vname" placeholder="Bill" required><br>
+          <label for="aname">Achternaam:</label><br>
+          <input type="text" id="aname" name="aname" placeholder="Gates" required><br>
+          <label for="land">Land:</label><br>
+          <select name="land" id="land" required>
+            <option value="Overig">Overig</option>
+            <option value="België">België</option>
+            <option value="Duitsland">Duitsland</option>
+            <option value="Luxemburg">Luxemburg</option>
+            <option value="Nederland">Nederland</option>
+            <option value="Spanje">Spanje</option>
+            <option value="USA">USA</option>
+          </select><br>
+          <label for="mail">Mail adres:</label><br>
+          <input type="email" id="mail" name="mail" placeholder="billgates@gmail.com" required><br>
+          <label for="telefoon">Telefoonnummer:</label><br>
+          <input type="tel" id="telefoon" name="telefoon" pattern="^\d{10}$" placeholder="06-55523653" required><br>
+          <label for="msg">Bericht:</label><br>
+          <textarea class = "msg"type="text" id="msg" name="msg" placeholder="Wanneer Bill Gates het warm heeft zet hij de 'windows' open." required></textarea><br><br>
+          <input class="tekst" type="submit" value="Verzenden">
+        </fieldset>
+      </form>
+      <img class = "img4" src="Images/mail.png">
+    </div>
   </div>
 </body>
 </html>

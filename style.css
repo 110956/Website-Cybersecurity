@@ -1,5 +1,6 @@
 html {
     background: url(Images/Background.gif) repeat center center fixed;
+  background-size: contain;
 }
 
 /*header*/
@@ -144,6 +145,10 @@ fieldset{
   width: 20vw;
   font-family: arial;
 }
+.divform{
+  display:flex;
+  width: 100%;
+}
 
 /*afbeeldingen*/
 img{
@@ -152,20 +157,54 @@ img{
 
 .img1{
   width: 30vw;
-  height: 15vw;
 }
 
 .img2{
   width: 30vw;
-  height: 17vw;
 }
 .img3{
   width: 30vw;
-  height: 15vw;
+  float: right;
 }
 
 .img4{
-  width: 30vw;
-  height: 17vw;
-  margin-right: 50px;
+  height: 20vw;
+  margin-top: 50px;
+  float: right;
+  
+}
+
+/*queries*/
+@media (max-width: 500px) {
+  .img1 {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px){
+    .img2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px){
+    .img3 {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 530px){
+  .divform{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .img4 {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+  }
 }
